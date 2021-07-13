@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 .app{
     height: 100vh;
     display: flex;
@@ -20,14 +22,7 @@
     align-items: center;
 }
 
-.time-select{
-    background: lightskyblue;
-}
-.sound-picker{
-    background: lightgreen;
-}
 .player-container{
-    background: lightcoral;
     position: relative;
 }
 .player-container > svg{
@@ -39,6 +34,18 @@
     pointer-events: none;
 }
 
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
+}
+
 video{
-    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
 }
