@@ -25,3 +25,7 @@
 .player-container{
     background: lightcoral;
 }
+
+video{
+    display: none;
+}
