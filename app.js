@@ -19,8 +19,20 @@ const app = () => {
 
     //play sound
     play.addEventListener('click', ()=>{
-        song.play();
+        checkPlaying(song);
     });
+    //function to play and stop music
+    const checkPlaying = song =>{
+        if(song.paused){
+            song.play();
+            video.play();
+            play.src = './svg.pause.svg';
+        }else{
+            song.pause();
+            video.pause();
+            play.src = './svg.play.svg';
+        }
+    }
 };
 
 app();
