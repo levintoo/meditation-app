@@ -36,7 +36,9 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-
+.player-container > img{
+    position: absolute;
+}
 .time-display{
     position: absolute;
     bottom: 10%;
