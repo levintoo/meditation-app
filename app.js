@@ -7,7 +7,7 @@ const app = () => {
   //sounds
   const sounds = document.querySelectorAll(".sound-picker button");
   //time display
-  const timeDisplay = document.querySelector(".time-dislay");
+  const timeDisplay = document.querySelector(".time-display");
   //get lengt of outline
   const outlineLength = outline.getTotalLength();
   //duration
@@ -42,7 +42,8 @@ const app = () => {
     let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
     outline.style.strokeDashoffset = progress;
 
-
+    //animate the text
+    timeDisplay.textContent = `${minutes}:${seconds}`;
   };
 };
 
